@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'HYWenHei-85W';
+    src: url('zhcn.ttf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: 'HYWenHei-85W';
+    animation: popUp 1s ease forwards;
+}
+
+body {
+    background-color: #e4e3dd;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #5c3fa2;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    animation: popUp 2s ease forwards;
+}
+
+/* About Me*/
+#about-me {
+    padding: 2rem 5%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic-about {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 2rem;
+    border: 5px solid white;
+}
+
+.about-container p {
+    font-size: 1.2rem;
+    animation: popUp 4s ease forwards;
+}
+
+/* Education and Skills Sections */
+section {
+    padding: 2rem 5%;
+    max-width: 900px;
+    margin: 0 auto;
+  
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #5c3fa2;
+    border-bottom: 2px solid #5c3fa2;
+    padding-bottom: 0.5rem;
+    animation: popUp 2s ease forwards;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1rem;
+    animation: popUp 4s ease forwards;
+}
+
+li {
+    margin-bottom: 0.8rem;
+    animation: popUp 4s ease forwards;
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem 5%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    animation: popUp 4s ease forwards;
+}
+
+.contact-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 2rem;
+    border-radius: 10px;
+}
+
+.contact-links p {
+    font-size: 1.2rem;
+}
+
+.contact-links a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #5c3fa2;
+    color: white;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container, .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic-about, .contact-pic {
+        margin-bottom: 1rem;
+        margin-right: 0;
+      width: 300px;
+      height: 300px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.social-icon {
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+    vertical-align: middle; /* Aligns the icon with text baseline */
+}
+
+.social-iconmail {
+    width: 23px; /* Adjust icon size */
+    height: 19px;
+    vertical-align: middle; /* Aligns the icon with text baseline */
+}
+
+  @keyframes popUp {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
